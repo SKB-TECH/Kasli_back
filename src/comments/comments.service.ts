@@ -1,7 +1,7 @@
 import { Injectable, NotAcceptableException, NotFoundException } from "@nestjs/common";
 import { InjectRepository } from "@nestjs/typeorm";
 import { Repository } from "typeorm";
-import { CommentEntity } from "./entities/comment.enetity";
+import { CommentEntity } from "./entities/comment.entity";
 import { New_comment_dto } from "./DTO/new_comment_dto";
 import { Update_comment_dto } from "./DTO/update_comment_dto";
 

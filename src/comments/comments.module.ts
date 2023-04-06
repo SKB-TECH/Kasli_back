@@ -2,10 +2,10 @@ import { Module } from "@nestjs/common";
 import { CommentsController } from "./comments.controller";
 import { CommentsService } from "./comments.service";
 import { TypeOrmModule } from "@nestjs/typeorm";
-import { CommentEnetity } from "./entities/comment.enetity";
+import { CommentEntity } from "./entities/comment.entity";
 
 @Module({
-  imports: [TypeOrmModule.forFeature([CommentEnetity])],
+  imports: [TypeOrmModule.forFeature([CommentEntity])],
   controllers: [CommentsController],
   providers: [CommentsService]
 })

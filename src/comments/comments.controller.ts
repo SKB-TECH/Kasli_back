@@ -1,7 +1,7 @@
-import { Body, Controller, Get, Param, Patch, Post } from "@nestjs/common";
+import { Body, Controller, Delete, Get, Param, Patch, Post } from "@nestjs/common";
 import { CommentsService } from "./comments.service";
 import { New_comment_dto } from "./DTO/new_comment_dto";
-import { CommentEntity } from "./entities/comment.enetity";
+import { CommentEntity } from "./entities/comment.entity";
 import { Update_comment_dto } from "./DTO/update_comment_dto";
 
 @Controller("kasli_api/comments")
@@ -34,6 +34,12 @@ export class CommentsController {
     @Body() commentModif: Update_comment_dto
   ): Promise<CommentEntity> {
     return await this.serviceComment.update(id, commentModif);
+  }
+
+  //delete comment
+  @Delete("delete_comment/:id")
+  async delete(@Param("id") id: string) {
+    return await this.serviceComment.deleteOne(id);
   }
 
   //bloquer
