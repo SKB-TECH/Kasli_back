@@ -4,7 +4,7 @@ import { New_post_dto } from "./DTO/new_post_dto";
 import { PostEntity } from "./entities/post.entity";
 import { Update_post_dto } from "./DTO/update_post_dto";
 
-@Controller("kasli_api/post")
+@Controller("/kasli_api/post")
 export class PostController {
   constructor(private readonly postService: PostService) {
   }

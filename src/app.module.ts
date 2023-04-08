@@ -6,6 +6,10 @@ import { TypeOrmModule } from "@nestjs/typeorm";
 import { AdresseModule } from "./adresse/adresse.module";
 import { CommentsModule } from "./comments/comments.module";
 import { PostModule } from "./post/post.module";
+import { FavoriModule } from "./favori/favori.module";
+import { NotificationModule } from "./notification/notification.module";
+import { UserModule } from "./user/user.module";
+import { GalerieModule } from "./galerie/galerie.module";
 import * as dotenv from "dotenv";
 
 dotenv.config();
@@ -27,7 +31,11 @@ dotenv.config();
     }),
     AdresseModule,
     CommentsModule,
-    PostModule
+    PostModule,
+    FavoriModule,
+    NotificationModule,
+    UserModule,
+    GalerieModule
   ],
   controllers: [AppController],
   providers: [AppService],
