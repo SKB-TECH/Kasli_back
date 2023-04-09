@@ -1,5 +1,5 @@
-import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
-import { TimeStamps } from '../../Times/timestamp.entity';
+import { Column, Entity, PrimaryGeneratedColumn } from "typeorm";
+import { TimeStamps } from "../../Times/timestamp.entity";
 
 @Entity('addresse')
 export default class AdresseEntity extends TimeStamps {
@@ -19,6 +19,4 @@ export default class AdresseEntity extends TimeStamps {
 
   @Column()
   avenue: string;
-  @Column()
-  num: string;
 }
