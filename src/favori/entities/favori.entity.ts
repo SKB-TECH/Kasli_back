@@ -12,7 +12,7 @@ export class FavoriEntity extends TimeStamps {
   })
   subject: string;
   @Column({
-    type: "simple-json",
+    type: "jsonb",
     default: []
   })
   criteres: mainson;

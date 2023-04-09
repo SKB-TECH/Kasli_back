@@ -1,4 +1,5 @@
 import { IsOptional, IsString } from "class-validator";
+import { mainson } from "../interfaces/maison_interface";
 
 export class Update_favori_dto {
   @IsString()
@@ -6,5 +7,5 @@ export class Update_favori_dto {
   subject: string;
   @IsString()
   @IsOptional()
-  critere: string;
+  criteres: mainson;
 }
