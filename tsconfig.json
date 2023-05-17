@@ -9,6 +9,9 @@
     "allowSyntheticDefaultImports": true,
     "target": "es5",
     "sourceMap": false,
+      "paths": {
+      "@/*": ["src/*"]
+    },
     "outDir": "./dist",
     "baseUrl": ".",
     "rootDir": "src",
