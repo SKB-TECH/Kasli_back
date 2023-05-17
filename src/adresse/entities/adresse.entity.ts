@@ -1,6 +1,5 @@
 import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
-import { TimeStamps } from '../../Times/timestamp.entity';
-
+import { TimeStamps } from '../../Times/Timestamp.entity';
 @Entity('addresse')
 export default class AdresseEntity extends TimeStamps {
   @PrimaryGeneratedColumn('uuid')
